@@ -9,8 +9,6 @@ package discountstrategy;
  *
  * @author sawyer
  */
-public interface ICustomer {
-
-    public Object getCustId();
+public class LineItem {
     
 }

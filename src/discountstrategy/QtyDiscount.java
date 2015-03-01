@@ -11,10 +11,11 @@ package discountstrategy;
  */
 public class QtyDiscount implements DiscountStrategy {
     private double discountRate = 0.15;
+    private double price;
     private int qty;
     private int minQty;
     
-    public QtyDiscount (int minQty) {
+    public QtyDiscount (double price, int minQty) {
         this.minQty = minQty;
     }
     
@@ -42,6 +43,14 @@ public class QtyDiscount implements DiscountStrategy {
     @Override
     public void setDiscountRate(double discountRate) {
         this.discountRate = discountRate;
+    }
+    
+    public double getPrice() {
+        return price;
+    }
+    
+    public void setPrice(double price) {
+        this.price = price;
     }
     
     public int getQty() {

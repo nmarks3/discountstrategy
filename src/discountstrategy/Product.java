@@ -7,10 +7,9 @@ public class Product {
     private String name;
     private double price;
 
-    public Product() {     
-    }
     
-    public Product(String prodId, String name, double price) {
+    
+    public Product(String prodId, String name, double price, DiscountStrategy discountStrategy) {
         this.prodId = prodId;
         this.name = name;
         this.price = price;
@@ -51,15 +50,5 @@ public class Product {
         }
     }
     
-    public static void main(String[] args) {
-        Product product = new Product();
-        product.setName("OMG");
-        product.setProdId("WTF");
-        product.setPrice(666);
-        
-        System.out.println(product.getProdId());
-        System.out.println(product.getName());
-        System.out.println(product.getPrice());
-
-    }
+    
 }
