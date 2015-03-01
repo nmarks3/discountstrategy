@@ -9,7 +9,7 @@ package discountstrategy;
  *
  * @author sawyer
  */
-public class FakeDatabase {
+public class FakeDatabase implements ReceiptDataAccessStrategy {
     private ICustomer[] customers = {
         new Customer("100", "John Smith"),
         new Customer("200", "Sally Jones"),
@@ -30,6 +30,7 @@ public class FakeDatabase {
      * @return found Customer or null if not found or bad argument
      */
     
+    @Override
     public final ICustomer findCustomer(final String custId) {
         // validation is needed for method parameter
         if(custId == null || custId.length() == 0) {
@@ -55,6 +56,7 @@ public class FakeDatabase {
      * @return found Product or null if not found or bad argument
      */
     
+    @Override
     public final Product findProduct(final String prodId) {
         // validation is needed for method parameter
         if(prodId == null || prodId.length() == 0) {

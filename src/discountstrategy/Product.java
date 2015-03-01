@@ -6,13 +6,21 @@ public class Product {
     private String prodId;
     private String name;
     private double price;
-
+    private DiscountStrategy discountStrategy;
     
     
     public Product(String prodId, String name, double price, DiscountStrategy discountStrategy) {
         this.prodId = prodId;
         this.name = name;
         this.price = price;
+    }
+    
+    public double getDiscountPrice(int qty) {
+        return discountStrategy.getDiscountPrice(price, qty);
+    }
+    
+    public double getDiscountAmt(int qty) {
+        return discountStrategy.getDiscountAmt(price, qty);
     }
     
     public String getProdId() {

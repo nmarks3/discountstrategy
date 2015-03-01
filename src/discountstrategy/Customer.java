@@ -18,21 +18,27 @@ public class Customer implements ICustomer {
         this.custId = custId;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public void setName(String name) {
         this.name = name;
     }
 
+    @Override
     public String getCustId() {
         return custId;
     }
 
+    @Override
     public void setCustId(String custId) {
         this.custId = custId;
     }
+
+   
     
     
     

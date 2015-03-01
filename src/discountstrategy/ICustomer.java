@@ -11,6 +11,12 @@ package discountstrategy;
  */
 public interface ICustomer {
 
-    public Object getCustId();
+    String getCustId();
+
+    String getName();
+
+    void setCustId(String custId);
+
+    void setName(String name);
     
 }
