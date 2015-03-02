@@ -10,20 +10,20 @@ package discountstrategy;
  * @author sawyer
  */
 public class CashRegister {
+
     private Receipt receipt;
-    
+
     public void startSale(String custId, ReceiptDataAccessStrategy db) {
         receipt = new Receipt(custId, db);
     }
-    
-    public void addProduct(String prodId, int qty){
+
+    public void addProduct(String prodId, int qty) {
         receipt.addItem(prodId, qty);
     }
-    
+
     public void endSale() {
         receipt.printReceipt();
-        
+
     }
-    
-    
+
 }

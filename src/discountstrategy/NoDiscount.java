@@ -9,7 +9,7 @@ package discountstrategy;
  *
  * @author sawyer
  */
-public class NoDiscount implements DiscountStrategy{
+public class NoDiscount implements DiscountStrategy {
 
     @Override
     public double getDiscountAmt(double price, int qty) {
@@ -30,5 +30,5 @@ public class NoDiscount implements DiscountStrategy{
     public void setDiscountRate(double discountRate) {
         // does nothing
     }
-    
+
 }

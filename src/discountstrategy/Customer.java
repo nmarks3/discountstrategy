@@ -10,10 +10,11 @@ package discountstrategy;
  * @author sawyer
  */
 public class Customer implements ICustomer {
+
     private String name;
     private String custId;
 
-    public Customer (String custId, String name) {
+    public Customer(String custId, String name) {
         this.name = name;
         this.custId = custId;
     }
@@ -38,8 +39,4 @@ public class Customer implements ICustomer {
         this.custId = custId;
     }
 
-   
-    
-    
-    
 }

@@ -11,18 +11,8 @@ package discountstrategy;
  */
 public interface ReceiptDataAccessStrategy {
 
-    /**
-     * Tries to find a Customer by customer id.
-     * @param custId - must not be null or empty
-     * @return found Customer or null if not found or bad argument
-     */
     Customer findCustomer(String custId);
 
-    /**
-     * Tries to find a Proudct by product id.
-     * @param prodId - must not be null or empty
-     * @return found Product or null if not found or bad argument
-     */
     Product findProduct(String prodId);
-    
+
 }

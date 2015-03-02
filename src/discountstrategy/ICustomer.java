@@ -18,5 +18,5 @@ public interface ICustomer {
     void setCustId(String custId);
 
     void setName(String name);
-    
+
 }
