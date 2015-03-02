@@ -16,7 +16,7 @@ public interface ReceiptDataAccessStrategy {
      * @param custId - must not be null or empty
      * @return found Customer or null if not found or bad argument
      */
-    ICustomer findCustomer(String custId);
+    Customer findCustomer(String custId);
 
     /**
      * Tries to find a Proudct by product id.
