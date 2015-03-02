@@ -13,7 +13,7 @@ public class LineItem {
     private Product product;
     private int qty;
     
-    public LineItem(String prodId, int qty) {
+    public LineItem(Product product, int qty) {
     this.product = product;
     this.qty = qty;
     }
