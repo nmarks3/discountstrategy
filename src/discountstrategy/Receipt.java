@@ -15,7 +15,7 @@ public class Receipt {
     private LineItem[] lineItems = new LineItem[0];
     private ReceiptDataAccessStrategy db;
 
-    public Receipt(String custId, ReceiptDataAccessStrategy db) {
+    public Receipt(String custId) {
         this.customer = db.findCustomer(custId);
     }
 

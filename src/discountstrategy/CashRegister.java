@@ -13,8 +13,8 @@ public class CashRegister {
 
     private Receipt receipt;
 
-    public void startSale(String custId, ReceiptDataAccessStrategy db) {
-        receipt = new Receipt(custId, db);
+    public void startSale(String custId) {
+        receipt = new Receipt(custId);
     }
 
     public void addProduct(String prodId, int qty) {
